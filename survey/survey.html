@@ -167,8 +167,8 @@
                     $("#mainData").hide();
                     $("#myModal").show();
                     $("#dataResults").html('<h1 class="text-center">here are your results... </h1>');
-                    $("#dataResults").append('<h1 class ="text-center">Your best vacation match is ' + data[0]);
-                    
+                    $("#dataResults").append('<h2 class ="text-center">' + data[0]);
+                    $("#dataResults").append('<img src="' + data[1] +'" width="300">');
                     // Get the modal
                     var modal = document.getElementById('myModal');
 
@@ -192,7 +192,7 @@
                 });
         });
     </script>
-    <footer class="footer" style="position: fixed; bottom: 5px;width: 100%">
+    <footer class="footer">
                 <div class="container">
                     <div class="row">
                         <div class="col-sm-12">
